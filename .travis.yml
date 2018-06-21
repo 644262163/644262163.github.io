@@ -8,6 +8,7 @@ script:
   - hexo g
 
 after_script:
+  - cp ./README.md ./public/
   - cd ./public
   - git init
   - git config user.name "${user_name}"
