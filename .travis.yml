@@ -15,7 +15,7 @@ after_script:
   - git remote add origin https://${github_token}@${github_ref}
   - git add .
   - git commit -m "update"
-  - git push -q origin master:master
+  - git push -f -q origin master:master
 
 branches:
   only:
